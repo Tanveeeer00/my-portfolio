@@ -40,7 +40,7 @@ export default function Intro() {
         <span className="font-bold">full-stack developer</span> from Mumbai with
         a strong focus on <span className="font-bold"> the MERN stack</span>. I
         enjoy building <span className="italic">sites & apps</span>
-        <span> Which solves a real problem</span>.
+        <span> Which solve real problems</span>.
       </motion.h1>
 
       <motion.div
