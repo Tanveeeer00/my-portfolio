@@ -10,7 +10,10 @@ import { FaGitSquare } from "react-icons/fa";
 
 export default function Intro() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      id="home"
+    >
       <div className="flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
