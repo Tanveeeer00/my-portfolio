@@ -29,7 +29,7 @@ export default function Project({
     >
       <section
         className="bg-gray-100 max-w-[42rem] 
-        border border-black/5 overflow-hidden 
+        borderBlack overflow-hidden 
          rounded-lg sm:pr-8 relative sm:h-[20rem]  
         hover:bg-gray-200 transition group-even:pl-8"
       >
