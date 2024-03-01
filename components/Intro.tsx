@@ -17,7 +17,7 @@ export default function Intro() {
   return (
     <section
       ref={ref}
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] pb-10"
       id="home"
     >
       <div className="flex items-center justify-center">
@@ -36,7 +36,7 @@ export default function Intro() {
             height="192"
             quality="95"
             priority={true}
-            className="rounded-full h-32 w-32 object-cover border-[0.35rem] border-white shadow-xl"
+            className="rounded-full h-32 w-32 object-cover border-[0.35rem] border-white shadow-xl dark:border-sky-800/40"
           />
         </motion.div>
       </div>
@@ -45,9 +45,12 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Tanveer Shaikh.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> from Mumbai with
-        a strong focus on <span className="font-bold"> the MERN stack</span>. I
+        <span className="font-bold dark:text-sky-400">
+          Hello, I'm Tanveer Shaikh.
+        </span>{" "}
+        I'm a <span className="font-bold">full-stack developer</span> from
+        Mumbai with a strong focus on{" "}
+        <span className="font-bold dark:text-sky-400"> the MERN stack</span>. I
         enjoy building <span className="italic">sites & apps</span>
         <span> Which solve real problems</span>.
       </motion.h1>
@@ -60,18 +63,18 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition border shadow-xl"
+          className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition border shadow-2xl dark:bg-white/10 dark:hover:text-sky-400 dark:border-white/30"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
         >
           Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition " />
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack shadow-xl"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack shadow-2xl dark:hover:text-sky-400 dark:bg-white/10 dark:border-white/30"
           href="/Arpit_singh(resume).pdf"
           download
         >
@@ -80,7 +83,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack shadow-xl"
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack shadow-2xl dark:bg-transparent dark:text-white dark:hover:text-sky-400"
           href="https://www.linkedin.com/in/tanveer-shaikh00/"
           target="_blank"
         >
@@ -88,7 +91,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack shadow-xl "
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack shadow-2xl dark:hover:text-sky-400 dark:text-white  dark:bg-transparent "
           href="https://github.com/Tanveeeer00"
           target="_blank"
         >
