@@ -31,7 +31,7 @@ export default function Project({
         className="bg-gray-100 max-w-[42rem] 
         borderBlack overflow-hidden 
          rounded-lg sm:pr-8 relative sm:h-[20rem]  
-        hover:bg-gray-200 transition group-even:pl-8"
+        hover:bg-gray-200 transition group-even:pl-8 dark:bg-slate-700 dark:hover:bg-slate-800"
       >
         <div
           className="pt-4 pb-7 py-4 px-5
@@ -39,13 +39,15 @@ export default function Project({
         flex flex-col h-full 
         group-even:ml-[26rem]"
         >
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
+          <h3 className="text-2xl font-semibold dark:text-sky-400">{title}</h3>
+          <p className="mt-2 leading-relaxed text-gray-700 dark:text-gray-100">
+            {description}
+          </p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
                 key={index}
-                className="bg-black/[0.7] px-3 py-1 text-[0.7] uppercase tracking-wider rounded-full text-white"
+                className="bg-black/[0.7] px-3 py-1 text-[0.7] uppercase tracking-wider rounded-full text-white border border-slate-800 dark:text-slate-200 dark:bg-black/25 dark:border-white/30"
               >
                 {tag}
               </li>
@@ -56,7 +58,7 @@ export default function Project({
           src={imageUrl}
           alt="project that i worked on"
           quality={95}
-          className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl 
+          className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl border
         transition
         group-hover:scale-[1.04] 
         group-even:right-[initial] 
@@ -68,7 +70,7 @@ export default function Project({
         
         group-hover:-translate-x-3 
         group-hover:translate-y-3 
-        group-hover:-rotate-2"
+        group-hover:-rotate-2 dark:border-white/10"
         />
       </section>
     </motion.div>

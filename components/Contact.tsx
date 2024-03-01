@@ -13,7 +13,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="mb-28 scroll-mt-28 sm:mb-28 w-[min(100%,38rem)] text-center"
       initial={{
         opacity: 0,
       }}
@@ -28,10 +28,10 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className="text-gray-700 -mt-6">
+      <p className="text-gray-700 -mt-2 dark:text-gray-300">
         Please contact me directly at{" "}
         <a
-          className="underline font-bold "
+          className="underline font-bold dark:text-sky-400"
           href="mailto:shaikhtanveer5205@gmail.com"
         >
           shaikhtanveer5205@gmail.com
@@ -39,7 +39,7 @@ export default function Contact() {
         or through this form.
       </p>
       <form
-        className="mt-10 flex flex-col dark:text-black"
+        className="mt-10 flex flex-col dark:text-gray-200"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
           if (error) {
@@ -56,7 +56,7 @@ export default function Contact() {
         // }}
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack shadow-xl p-4 mb-4"
+          className="h-14 px-4 rounded-lg borderBlack shadow-xl p-4 mb-4 dark:bg-black/20 dark:border-white/20"
           name="senderEmail"
           type="email"
           required
@@ -64,7 +64,7 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 p-4 rounded-lg borderBlack shadow-xl mb-4"
+          className="h-52 my-3 p-4 rounded-lg borderBlack shadow-xl mb-4 dark:bg-black/20 dark:border-white/20"
           name="message"
           placeholder="Your message"
           required
