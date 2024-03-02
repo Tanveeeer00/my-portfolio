@@ -9,7 +9,7 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      className="fixed bottom-5 right-5 bg-white w-[4rem] h-12 text-3xl bg-opacity-80 backdrop-blur-[0.5rem] 
+      className="fixed bottom-5 right-5 bg-white w-[2rem] h-8 text-2xl bg-opacity-80 backdrop-blur-[0.5rem] 
       border border-black border-opacity-40 shadow-2xl rounded-full 
       flex items-center justify-center 
       hover:scale-[1.15] active:scale-105 transition-all

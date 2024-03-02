@@ -30,14 +30,15 @@ export default function Project({
       <section
         className="bg-gray-100 max-w-[42rem] 
         borderBlack overflow-hidden 
-         rounded-lg sm:pr-8 relative sm:h-[20rem]  
-        hover:bg-gray-200 transition group-even:pl-8 dark:bg-slate-700 dark:hover:bg-slate-800"
+        rounded-lg sm:pr-8 relative sm:h-[20rem]  
+        hover:bg-gray-200 transition sm:group-even:pl-8 
+        dark:bg-slate-700 dark:hover:bg-slate-800"
       >
         <div
           className="pt-4 pb-7 py-4 px-5
         sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] 
         flex flex-col h-full 
-        group-even:ml-[26rem]"
+        sm:group-even:ml-[26rem]"
         >
           <h3 className="text-2xl font-semibold dark:text-sky-400">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-gray-100">
@@ -47,7 +48,7 @@ export default function Project({
             {tags.map((tag, index) => (
               <li
                 key={index}
-                className="bg-black/[0.7] px-3 py-1 text-[0.7] uppercase tracking-wider rounded-full text-white border border-slate-800 dark:text-slate-200 dark:bg-black/25 dark:border-white/30"
+                className="bg-black/[0.8] px-3 py-1 text-[0.7] uppercase tracking-wider rounded-full text-white border border-slate-800 dark:text-slate-200 dark:bg-black/25 dark:border-white/30"
               >
                 {tag}
               </li>
@@ -58,7 +59,7 @@ export default function Project({
           src={imageUrl}
           alt="project that i worked on"
           quality={95}
-          className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl border
+          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl border
         transition
         group-hover:scale-[1.04] 
         group-even:right-[initial] 
