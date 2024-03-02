@@ -11,12 +11,12 @@ export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
   return (
-    <header className="z-[999] relative">
+    <header className="z-[999] relative sm:w-4">
       <motion.div
         className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none 
         border border-white border-opacity-40
         bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] 
-        sm:top-auto sm:bottom-0 sm:h-[5rem] sm:w-[90%] sm:rounded-full dark:bg-transparent dark:backdrop-blur-[0.5rem] dark:border-white/20"
+        sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-transparent dark:backdrop-blur-[0.5rem] dark:border-white/20"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
