@@ -12,7 +12,7 @@ export default function Overview() {
   const { theme } = useTheme();
   const { ref } = useSectionInView("Overview");
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id="overview" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>Overview</SectionHeading>
 
       {overviewData.map((item, index) => (
