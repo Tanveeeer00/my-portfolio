@@ -19,9 +19,9 @@ export default function Zoomed({ src, alt }: ImageProps) {
       <Image
         src={src}
         alt={alt}
-        quality={95}
-        className={`cursor-pointer ${
-          isZoomed ? "w-full h-full fixed top-0 left-0 z-50" : ""
+        quality={100}
+        className={`cursor-pointer rounded-lg h-[16rem] ${
+          isZoomed ? "w-full h-[40rem] fixed top-0 left-0 z-50 " : ""
         }`}
         onClick={handleZoomClick}
         ref={imageRef}
