@@ -45,7 +45,7 @@ export const overviewData = [
   },
   {
     title: "Front-End Developer",
-    location: "FL",
+    location: "Orlando, FL",
     description:
       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
