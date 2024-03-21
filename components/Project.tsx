@@ -2,14 +2,16 @@
 import { projectsData } from "@/lib/data";
 import { useScroll, motion, useTransform } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
 
 type ProjectProps = (typeof projectsData)[number];
 export default function Project({
   title,
   description,
-  tags,
+  // tags,
   imageUrl,
+  link,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -30,21 +32,31 @@ export default function Project({
       <section
         className="bg-gray-100 max-w-[42rem] 
         borderBlack overflow-hidden 
-        rounded-lg sm:pr-8 relative sm:h-[20rem]  
+        rounded-lg sm:pr-8 relative sm:h-[21rem]  
         hover:bg-gray-200 transition sm:group-even:pl-8 
         dark:bg-slate-700 dark:hover:bg-slate-800"
       >
         <div
           className="pt-4 pb-7 py-4 px-5
-        sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] 
-        flex flex-col h-full 
-        sm:group-even:ml-[26rem]"
+          sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] 
+          flex flex-col justify-center items-center h-full 
+          sm:group-even:ml-[20rem]"
         >
           <h3 className="text-2xl font-semibold dark:text-sky-400">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-gray-100">
             {description}
           </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+          <div className="mt-2 flex justify-center items-center">
+            <span className="border border-white bg-white/5 shadow-xl rounded-full w-full px-3 py-1 mb-2 dark:border-sky-300 dark:bg-transparent">
+              <Link href={link}>
+                <button className="text-slate-800 font-bold font-sans dark:text-sky-500">
+                  View All
+                </button>
+              </Link>
+            </span>
+          </div>
+
+          {/* <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto h-full mb-2">
             {tags.map((tag, index) => (
               <li
                 key={index}
@@ -53,25 +65,25 @@ export default function Project({
                 {tag}
               </li>
             ))}
-          </ul>
+          </ul> */}
         </div>
         <Image
           src={imageUrl}
           alt="project that i worked on"
           quality={95}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl border
-        transition
-        group-hover:scale-[1.04] 
-        group-even:right-[initial] 
-        group-even:-left-40 
-        
-        group-even:group-hover:translate-x-3 
-        group-even:group-hover:translate-y-3 
-        group-even:group-hover:rotate-2
-        
-        group-hover:-translate-x-3 
-        group-hover:translate-y-3 
-        group-hover:-rotate-2 dark:border-white/10"
+          transition
+          group-hover:scale-[1.04] 
+          group-even:right-[initial] 
+          group-even:-left-40 
+          
+          group-even:group-hover:translate-x-3 
+          group-even:group-hover:translate-y-3 
+          group-even:group-hover:rotate-2
+          
+          group-hover:-translate-x-3 
+          group-hover:translate-y-3 
+          group-hover:-rotate-2 dark:border-white/10"
         />
       </section>
     </motion.div>

@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React from "react";
 import mine from "@/public/mine.jpg";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
@@ -79,7 +79,7 @@ export default function Intro() {
           focus:scale-110 hover:scale-110 active:scale-105 transition 
           cursor-pointer borderBlack shadow-2xl 
           dark:hover:text-sky-400 dark:bg-white/10 dark:border-white/30"
-          href="/Arpit_singh(resume).pdf"
+          href="/Tanveer_Shaikh(resume).pdf"
           download
         >
           Download CV{" "}
