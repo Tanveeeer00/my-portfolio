@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import ThemeContextProvider from "@/context/ThemeContext";
-import Loading from "./loading";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -46,7 +45,6 @@ export default function RootLayout({
             <ThemeSwitcher />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
-        <Loading />
       </body>
     </html>
   );
