@@ -3,8 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
-import tBlack from "@/public/tBlack.png";
-import tWhite from "@/public/tWhite.png";
+import musicHome from "@/public/musicHome.png";
 import login from "@/public/login.png";
 import bgSecondsJs from "@/public/bgChangeSecondsJs.png";
 import bgPickerJs from "@/public/bgColorPickerJs.png";
@@ -21,6 +20,8 @@ import currencyCounterReact from "@/public/currencyConverterReact.png";
 import fetchToggleReact from "@/public/fetchToggoleGithubAPIReact.png";
 import homeMega from "@/public/homeMega.png";
 import UpdateMega from "@/public/updateEditMega.png";
+import javascript from "@/public/javascriptProject.png";
+import react from "@/public/reaactProjects.jpg";
 
 export const links = [
   {
@@ -87,7 +88,7 @@ export const projectsData = [
     description:
       "Developed a full-stack web application for blogging using Appwrite as a backend-as-a-service (BaaS) solution and React-Redux toolkit for the frontend. This ReactJS web application lets users create, manage, and share blog content.",
     // tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: tBlack,
+    imageUrl: homeMega,
     link: "/megablog",
   },
   {
@@ -96,26 +97,25 @@ export const projectsData = [
     description:
       "Explore my interactive JavaScript projects, showcasing proficiency in front-end development, user interaction, and problem-solving through engaging applications.",
     // tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: login,
+    imageUrl: javascript,
     link: "javascript",
   },
   {
     id: 3,
+    title: "React",
+    description:
+      " Explore my collection of interactive single-page applications built with React, showcasing my ability to create engaging and dynamic user experiences.",
+    imageUrl: react,
+    link: "react",
+  },
+  {
+    id: 4,
     title: "Music Art",
     description: `Developed an interactive music art experience using Next.js, a modern React framework, for a music art course.
       Utilized AceternityUI`,
     // tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: tWhite,
+    imageUrl: musicHome,
     link: "musicart",
-  },
-  {
-    id: 4,
-    title: "React",
-    description:
-      " Explore my collection of interactive single-page applications built with React, showcasing my ability to create engaging and dynamic user experiences.",
-    // tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: homeMega,
-    link: "react",
   },
 ] as const;
 
