@@ -3,6 +3,8 @@ import { JavascriptData } from "@/lib/data";
 import { FaGitSquare } from "react-icons/fa";
 import ProjectCard from "@/components/ProjectCard";
 import Zoomed from "@/components/Zoomed";
+import SectionHeading from "@/components/SectionHeading";
+import Button from "@/components/Button";
 
 type javascriptProps = (typeof JavascriptData)[number];
 
@@ -17,13 +19,7 @@ export default function page({
   return (
     <main className="flex flex-col items-center px-4">
       <div className="flex justify-center items-center flex-col">
-        <span
-          className="font-bold text-4xl mb-4 p-3 rounded-full
-      border border-black/10 shadow-lg text-gray-600 bg-slate-50
-      dark:border-white/20 dark:bg-transparent dark:text-sky-300"
-        >
-          JavaScript
-        </span>
+        <SectionHeading>JavaScript Beta</SectionHeading>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center gap-4 mb-16 md:max-w-full">
           {JavascriptData.map((data) => (
@@ -50,6 +46,7 @@ export default function page({
             </ProjectCard>
           ))}
         </div>
+        <Button />
       </div>
     </main>
   );
